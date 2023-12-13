@@ -1,0 +1,18 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>57.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
+    <target>lightningCommunity__Page_Layout</target>
+    <target>lightningCommunity__Theme_Layout</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Default">
+      <property name="imgSrc" type="String" label="Image Source" description="The URL of the image to display in the card"/>
+      <property name="headline" type="String" label="Card Headline" description="The headline text for the card"/>
+      <property name="redirectTo" type="String" label="Redirect To URL" description="The URL to redirect to when the card is clicked"/>
+      <property name="linkType" type="String" label="Link Type" description="Enter 'internal' for internal links or 'external' for external links"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
